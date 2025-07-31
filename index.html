@@ -6,6 +6,10 @@
   <title>Pebble Community</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Font Awesome for Instagram icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
     * {
       box-sizing: border-box;
@@ -80,21 +84,9 @@
       align-items: center;
       width: 100%;
       text-align: center;
-      padding-bottom: env(safe-area-inset-bottom);
-    }
-
-    .instagram-icon-wrapper {
-      width: 48px;
-      height: 48px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .instagram-link svg {
-      width: 100%;
-      height: 100%;
-      fill: #88a1c9;
+      color: #88a1c9;
+      text-decoration: none;
+      font-size: 2rem;
     }
 
     @media (max-width: 600px) {
@@ -107,9 +99,8 @@
         padding: 0.6rem 1.5rem;
       }
 
-      .instagram-icon-wrapper {
-        width: 40px;
-        height: 40px;
+      .instagram-link {
+        font-size: 1.75rem;
       }
     }
   </style>
@@ -119,29 +110,7 @@
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdse--zvKxQh670OJyvOJKVh4UNIwGJ2-euVdKCHIWfaV57EA/viewform" target="_blank" class="join-button">join the community</a>
 
   <a href="https://instagram.com/pebble.community" target="_blank" class="instagram-link" aria-label="Instagram">
-    <div class="instagram-icon-wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" preserveAspectRatio="xMidYMid meet">
-        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 
-                 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 189.6c-41.2 
-                 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 
-                 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 
-                 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27 
-                 0-14.9 12.1-27 27-27 14.9 0 27 12.1 27 27zm76.1 
-                 27.2c-.5-35.3-9.9-66.7-36.3-93.1s-57.8-35.8-93.1-36.3C293.3 
-                 32 256 32 224 32s-69.3 0-93.1.5c-35.3.5-66.7 9.9-93.1 
-                 36.3S2.7 117.6 2.2 152.9C1.7 176.7 1.6 200.7 1.6 
-                 224s0 47.3.5 71.1c.5 35.3 9.9 66.7 36.3 93.1s57.8 
-                 35.8 93.1 36.3c23.8.5 47.8.5 71.6.5s47.8 0 
-                 71.6-.5c35.3-.5 66.7-9.9 93.1-36.3s35.8-57.8 
-                 36.3-93.1c.5-23.8.5-47.8.5-71.6s0-47.8-.5-71.6zm-48.7 
-                 213c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 
-                 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 
-                 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 
-                 99.2-9 132.3-9s102.9-2.6 
-                 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 
-                 9 99.2 9 132.3s2.7 102.9-9 132.3z"/>
-      </svg>
-    </div>
+    <i class="fab fa-instagram"></i>
   </a>
 </body>
 </html>

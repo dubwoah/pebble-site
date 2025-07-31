@@ -16,11 +16,18 @@
       align-items: center;
       height: 100vh;
       font-family: sans-serif;
+      overflow: hidden;
     }
 
     .logo {
       max-width: 60%;
       height: auto;
+      animation: fadeIn 1.5s ease-out;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
     }
 
     .join-button {
@@ -30,20 +37,34 @@
       color: #2a3e79;
       font-family: 'Lato', sans-serif;
       font-size: 1.5rem;
+      font-weight: 700;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: opacity 0.3s ease;
       text-decoration: none;
+      animation: fadeIn 2s ease-out;
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .join-button:hover {
-      opacity: 0.85;
+      transform: scale(1.08);
+      opacity: 0.9;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
   <img src="pebble_logo.png" alt="Pebble Logo" class="logo"/>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdse--zvKxQh670OJyvOJKVh4UNIwGJ2-euVdKCHIWfaV57EA/viewform" target="_blank" class="join-button">join the community</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdse--zvKxQh670OJyvOJKVh4UNIwGJ2-euVdKCHIWfaV57EA/viewform" target="_blank" class="join-button">Join the Community</a>
 </body>
 </html>
